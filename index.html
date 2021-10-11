@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name ="author" content="Pascal Delvallée, étudiant chez OpenClassrooms" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user scalable=no" />>
+         la taille de l'écran en pixel CSS à l'échelle de 100%, zoom initial égal à 1 et indertiction aux utilisateurs de zoomer/dézoomer-->
+        <title>Booki</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header> <!-- Logo + Slogan + Navigation Menu -->
+                <div id="header">
+
+                    <div id="logo">
+                        <img src="Assets/logo/Booki.png" alt="logo de Booki" />
+                    </div>
+
+                    <div id="firstMenu">
+                        <nav> 
+                            <ul>
+                                <li><a href="#">Hébergement</a></li>
+                                <li><a href="#">Activités</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            
+                <div id="slogan">
+                    <h1>Trouvez votre hébergement pour vos vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+
+                <div id="barreRecherche">
+                    
+                    <div class="caseIcone">Icone</div>
+                
+                    <form method="post" action="traitement.php">
+                        <div class="caseVille">
+                            <input type="text" name="caseVille" placeholder="Marseille, France"/>
+                        </div>
+                    </form>
+
+                    <div class="caseRechercher">Rechercher</div>
+                </div>
+                
+                <div id="filtres">
+                    <strong>Filtres</strong>
+                    <div class="cercleEco"></div>
+                    <div class="caseEconomique">Economique </div>
+                    <div class="caseFamilial">Familial </div>
+                    <div class="caseRomantique">Romantique</div>
+                    <div class="caseAnimaux">Animaux autorisés </div>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </header>
+    
+            <section> <!-- A placer à droite -->
+                <header>
+                    <h1>Les plus populaires</h1>
+                </header>
+            </section>
+
+            <section>
+                <header>
+                    <h1>Hébergements à Marseille</h1>
+                </header>
+            </section>
+
+            <section>
+                <header>
+                    <h1>Activités à Marseille</h1>
+                </header>
+            </section>
+
+    <!-- Pied de page-->
+            <footer>
+                <div id="footer">
+                    <div class="aPropos">
+                        <h2>A propos</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Fonctionnement du site</a></li>
+                                <li><a href="#">Conditions générales de vente</a></li>
+                                <li><a href="#">Données et confidentialité</a></li>               
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="nosHébergements">
+                        <h2>Nos hébergements</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Charte de qualité</a></li>
+                                <li><a href="#">Soumettre votre hôtel</a></li>               
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="Assistance">
+                        <h2>Assistance</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Centre d'aide</a></li>
+                                <li><a href="#">Nous contacter</a></li>               
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

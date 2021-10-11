@@ -1,0 +1,144 @@
+/* Définition de la police */
+
+@font-face 
+{
+    font-family: 'Raleway-VariableFont_wght';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),       
+}
+
+
+/* Eléments principaux de la page */ 
+
+
+#bloc_page
+{
+    width: 992px;
+    margin: auto;
+}
+
+
+section, footer 
+{
+    background-color: #F2F2F2;  
+}
+
+ul, a
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover 
+{
+    color: #0065FC;
+}
+
+#firstMenu a:focus
+{
+    border-top : 1px solid #0065FC;
+}
+
+#firstMenu ul, li
+{
+    margin-right: 45px;
+    display: flex;
+}
+
+footer li
+{
+    margin-bottom: 5px;
+}
+
+#slogan p
+{
+    margin-top: 0px;
+}
+
+#slogan h1
+{
+    font-size:x-large;
+    margin-bottom: 5px;
+}
+
+#header
+{
+    display: flex;
+    justify-content: space-between    
+}
+
+/* Barre de recherche */
+
+#barreRecherche
+{
+    display: flex;
+}
+
+.caseIcone:nth-child(1)
+{
+    background-color: #F2F2F2;
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px;
+    padding: 10px;
+
+}
+
+.caseRechercher:nth-child(3)
+{
+    background-color: #0065FC;
+    color:white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px;
+}
+
+input[type="text"]
+{
+    padding: 10px;
+    font-weight: bold;
+}
+
+::placeholder
+{
+    color: black;
+}
+
+/* Filtres */
+
+#filtres
+{
+    display: flex;
+    margin-top: 30px;
+}
+
+#filtres strong
+{
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.caseEconomique, .caseFamilial, .caseRomantique, .caseAnimaux 
+{
+    border-radius: 16px 16px 16px 16px;
+    border:  solid gray 1px;
+    padding: 10px;
+    margin: 0px 30px 10px 0px;
+    font-weight: bold;   
+}
+.cercleEco
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background:#DEEBFF;
+}
+
+/* Pied de page */
+
+#footer 
+{
+    display: flex;
+    justify-content: space-around;  
+}
+
