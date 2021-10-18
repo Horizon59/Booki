@@ -1,14 +1,28 @@
 /* Définition de la police */
 
-@font-face 
+/*@font-face 
 {
     font-family: 'Raleway-VariableFont_wght';
-    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),       
+    src: url('./Raleway-VariableFont_wght.ttf') format('truetype'),       
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    font-family:'Raleway', sans-serif;
 }
 
-
+i
+{
+    font-family: FontAwesome;
+}
 /* Eléments principaux de la page */ 
 
+#logo img{
+    width: 100px;
+    height: 50px;
+}
 
 #bloc_page
 {
@@ -22,21 +36,18 @@ section, footer
     background-color: #F2F2F2;  
 }
 
-ul, a
+/* Paramétrage des menus de navigation */
+
+a
 {
-    list-style-type: none;
+    list-style: none;
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 
-a:hover 
+a:hover
 {
     color: #0065FC;
-}
-
-#firstMenu a:focus
-{
-    border-top : 1px solid #0065FC;
 }
 
 #firstMenu ul, li
@@ -74,13 +85,18 @@ footer li
     display: flex;
 }
 
+.caseIcone, #barreRecherche i
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+}
 .caseIcone:nth-child(1)
 {
     background-color: #F2F2F2;
     border-top-left-radius: 8px ;
     border-bottom-left-radius: 8px;
-    padding: 10px;
-
+    padding: 10px 15px 10px 15px ;
 }
 
 .caseRechercher:nth-child(3)
@@ -111,6 +127,17 @@ input[type="text"]
     margin-top: 30px;
 }
 
+#filtres i
+{
+    color: #0065FC;
+}
+
+#filtres i, .cercle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #filtres strong
 {
     font-weight: bold;
@@ -118,27 +145,106 @@ input[type="text"]
     margin-right: 20px;
 }
 
-.caseEconomique, .caseFamilial, .caseRomantique, .caseAnimaux 
+.case
 {
-    border-radius: 16px 16px 16px 16px;
-    border:  solid gray 1px;
-    padding: 10px;
-    margin: 0px 30px 10px 0px;
-    font-weight: bold;   
+    border-radius: 0px 16px 16px 0px;
+    border-top:  solid gray 1px;
+    border-bottom:  solid gray 1px;
+    border-right: solid gray 1px;
+    padding: 15px 15px 15px 30px;
+    margin: 0px 30px 0px 0px;
+    font-weight: bold;
+    size: 50px; 
+    align-self: center;
 }
-.cercleEco
+
+.cercle
 {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     background:#DEEBFF;
+    margin-right: -20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;    
 }
+
+/* INFOS */
+
+#paragraphesInfos
+{
+    display: flex;
+}
+
+.cercleInfos i
+{
+    color: #0065FC;
+}
+
+.cercleInfos
+{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 15px ;
+}
+
+.cercleInfos, .cercleInfos i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Pied de page */
 
 #footer 
 {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-between; 
 }
 
+#sections
+{
+   background-color: #F2F2F2;
+}
+
+#hebergementsMarseille 
+{
+    width: 75%;  
+}
+
+#lesPlusPopulaires
+{
+    width: 25%;
+}
+
+#lesPlusPopulaires, #hebergementsMarseille
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.LesPlusPopulaires img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+.imagesMarseille img{
+    width: 200px;
+    height: 100px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.imagesMarseille {
+    display: flex;
+    background-color: white; 
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
