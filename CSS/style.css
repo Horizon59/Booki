@@ -557,12 +557,15 @@ footer li
     #lesPlusPopulaires
     {
         width: auto;
-        margin-bottom: 20px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        padding-bottom: 20px; 
     }
 
     .lesPlusPopulairesCarte
     {
         height: auto;
+        margin-bottom: 20px;
     }
 
     .legende
